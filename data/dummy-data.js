@@ -1,0 +1,380 @@
+import Category from '../models/Category';
+import Meal from '../models/Product'
+
+export const CATEGORIES = [
+  new Category('c1', 
+  'Nail', 
+  '#f5428d',
+  'https://img.freepik.com/free-photo/concept-hand-cre-white-background_185193-68212.jpg'
+  ),
+  new Category('c2', 'Lipstick', '#f54242','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ6awiVuy2Mqpk0Iqp36zjm75TXPSeYenAhw&usqp=CAU'),
+  new Category('c4', 'Polish', '#f5d142','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUbiGms2yKqcNDAYrxazXZ_TuVnlRabqJhGw&usqp=CAU'),
+  new Category('c5', 'Powder', '#368dff','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOvYc0XfA6prEsGWJw22neW5qzpZk1ZsRXTA&usqp=CAU'),
+  new Category('c6', 'Mascara', '#41d95d','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC3nw_HNOcAppImg6REY8uJW9IQMww7NAxpg&usqp=CAU'),
+  new Category('c7', 'Eyeliner', '#9eecff','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVaA9-MyWRwMwKHUR_M-2o0fQo4bMtkzPplA&usqp=CAU'),
+];
+
+export const MEALS = [
+  new Meal(
+    'm1',
+    ['c1'],
+    'Karachi Biryani',
+    'luxurious',
+    'simple',
+    'https://media.istockphoto.com/photos/chicken-biryani-with-yogurt-dip-popular-indian-pakistani-non-food-picture-id1254720533?b=1&k=6&m=1254720533&s=170667a&w=0&h=vZypOLfxm2prhzkH7LxifiPgAPwt3tOcuH1Lx8ylq3o=',
+    60,
+    [
+      'Chicken 12 pieces 1 kg',
+'Basmati Rice 1 kg',
+'Onion Golden Brown 2 large size',
+'National Ginger Garlic Paste 2 tbsp',
+',Yogurt 2 cups',
+ 'National Sindhi Biryani Mix (ensure plums are separated) ½ packet',
+ 'White Cumin 1 tsp',
+ 'Bay Leaf 1 or 2',
+ 'Black Cumin ½ tsp',
+ 'Whole Black Pepper 7-8',
+ 'National Red Chili Powder 1tbsp',
+ 'Cloves 4-6',
+ 'Fresh Lemon 3-4',
+ 'Mint Leaves 1 bunch',
+ 'Crushed Cardamom 4-6',
+ 'Warm Milk 1 cup',
+ 'Saffron Color ¼ tsp',
+ 'Salt to taste',
+    ],
+    [
+      'Marinate 1 kg Chicken with 2 tbsp brown onion', 
+      '1 tbsp National Ginger Garlic Past', 
+      '½ tsp grated papaya ½ pack National Sindhi Biryani Masal',
+      '1 tbsp National Red Chili powder, mint leaves, 2 tbsp of lemon juice, salt, let it rest in the refrigerator for at least 1-2 hours',
+
+ 'Soak rice well for at least 1 hour. Wash rice well and boil rice with black cumin, 2-3 cloves, 3-4 cardamom, 2-3 cinnamon sticks, 4-6 black pepper cloves, 3-4 bay leaf and mint leaves', 
+ 'Once done, half drain them in colander and keep them aside',
+
+ 'Cook marinated chicken on low flame with 1 cup of cooking oil till chicken pieces are tender and chicken is done',
+ 'Once cooked set it aside. Generally, it takes around 8-10 minutes for chicken to become tender and cooked',
+
+ 'Now take a deep pan, grease it with cooking oil and add half serving of steamed rice, top it up with cooked chicken, top chicken with mint leaves, brown onion and lemon juice and then layer it with other half of the rice on top', 
+ 'Garnish again with mint leaves, brown onion',
+ 'Mix warm milk with saffron color and pour over the flavorful garnished rice and squeeze lemon juice on top and cover it with lid and let it simmer on low flame for 10 minutes at least',
+
+'Once done mix it with quarter plate from all four sides and serve delicious Hyderabadi Biryani in a nice rice plate topped with some crisp brown onion and fresh mint leaves along with Yogurt raita and some National mixed pickles and salad',
+    ],
+    false,
+    true,
+    true,
+    true
+  ),
+
+  new Meal(
+    'm2',
+    ['c2'],
+    'Zinger Burger',
+    'affordable',
+    'simple',
+    'https://images.unsplash.com/photo-1550547660-d9450f859349?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YnVyZ2VyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    20,
+    [
+ '3 boneless chicken breasts (around half a kg)',
+ '1 tspn of pepper',
+ '1 tspn of salt',
+ '2 tblspns of worcestershire sauce',
+ '1 tspn of Mustard powder or all spice powder',
+ '2 tblspns of Flour',
+ '1 Egg',
+ '1 1/2 cups of Breadcrumbs',
+ 'Soft seeded burger buns',
+ 'Mayonnaise or KFC Zinger Sauce',
+    ],
+    [
+      'Prepare your chicken breasts by slicing them if they are too large. Then marinate the chicken breasts with the pepper, salt, mustard or all spice powder, and Worcestershire sauce. Leave the chicken over night or at least 4 hours',
+  'To prepare the batter, beat together an egg and 2 tablespoons of water, then set this aside.',
+ 'Place the marinated chicken breasts in flour and coat generously. Dip them in to the egg and then in to the breadcrumbs, until well coated.',
+ 'Deep fry the coated chicken breasts in hot oil on a medium to high heat, until the breasts are golden brown and crispy.',
+ 'Slice the buns in half and lightly toast, then stack the final burger, with the lettuce at the top, then the chicken and finally the mayonnaise or KFC zinger sauce. Add sliced American cheese if you fancy a cheesy zinger.',
+    ],
+    false,
+    false,
+    false,
+    false
+  ),
+
+  new Meal(
+    'm3',
+    ['c3' , 'c2'],
+    'Roast Chikan',
+    'Luxurious',
+    'simple',
+    'https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Stuffed_turkey.jpg/1024px-Stuffed_turkey.jpg',
+    45,
+    [
+      '1 (3 pound) whole chicken, giblets removed',
+      'salt and black pepper to taste',
+      '1 tablespoon onion powder, or to taste',
+      '½ cup margarine, divided',
+      '1 stalk celery, leaves removed',
+    ],
+    [
+      'Preheat oven to 350 degrees F (175 degrees C)',
+      'Place chicken in a roasting pan, and season generously inside and out with salt and pepper',
+       'Sprinkle inside and out with onion powder.',
+       'Place 3 tablespoons margarine in the chicken cavity.', 
+      'Arrange dollops of the remaining margarine around the chicken', 
+      'Cut the celery into 3 or 4 pieces, and place in the chicken cavity',
+      'Bake uncovered 1 hour and 15 minutes in the preheated oven, to a minimum internal temperature of 180 degrees F (82 degrees C).',
+       'Remove from heat, and baste with melted margarine and drippings.',
+        'Cover with aluminum foil, and allow to rest about 30 minutes before serving',
+    ],
+    false,
+    false,
+    false,
+    true
+  ),
+
+  new Meal(
+    'm4',
+    ['c4'],
+    'Ice Cream',
+    'pricey',
+    'challenging',
+    'https://images.unsplash.com/photo-1600239448128-917653c5bf77?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
+    30,
+    [
+      '½ cup cold milk',
+ '1 tablespoon vanilla extract',
+ '1 (14 ounce) can sweetened condensed milk',
+ '⅛ teaspoon salt',
+ '1 pint heavy cream',
+    ],
+    [
+
+      'In a medium bowl, stir together cold milk, vanilla, condensed milk and salt. Set aside.',
+      'In a large bowl, beat heavy cream with an electric mixer until stiff peaks form. Fold milk mixture into whipped cream.',
+      'In a large bowl, beat heavy cream with an electric mixer until stiff peaks form. Fold milk mixture into whipped cream.',
+    ],
+    false,
+    false,
+    false,
+    false
+  ),
+
+  new Meal(
+    'm5',
+    ['c5', 'c10' , 'c4'],
+    'Rassian Salid',
+    'luxurious',
+    'simple',
+    'https://images.unsplash.com/photo-1537785713284-0015ce8a145c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzd8fHNhbGFkfGVufDB8fDB8fA%3D%3D&w=1000&q=80',
+    50,
+    [
+      'Potatoes 2',
+      'Carrots 2',
+      'Apple 1',
+      'Walnut 50 gm',
+      'Raisin 50 gm',
+      'Mayonnaise ½ cup',
+      'Black pepper ¼ tsp',
+      'Salt to taste',
+      'Cream 4 tsp',
+    ],
+    [
+      'Boil potatoes and carrots.',
+
+ 'Cut apple, potato and carrot into cubes.',
+
+ 'Combine boiled carrot, boiled potatoes, apple, walnut, raisin, black pepper, cream in a bowl and mix well.',
+
+ 'Serve the delicious Russian salad with grilled chicken and zeera pulao.',
+
+'To serve, garnish with lettuce leaf, sliced cucumber and long slices of carrot.',
+
+ 'Tips: Boiled green peas or boiled chicken can also be added to the salad.',
+    ],
+    true,
+    false,
+    true,
+    true
+  ),
+
+  new Meal(
+    'm6',
+    ['c6'],
+    'Delicious Tika Boti',
+    'pricey',
+    'hard',
+    'https://jkkababhouse.com/wp-content/uploads/2020/12/habib-dadkhah-DjKPWvOD5GU-unsplash-1024x706.jpeg',
+    60,
+    [
+      'Chicken 500 gm (boneless)',
+      'Ginger garlic paste 2 tsp',
+      'Red chilli powder 1 tsp',
+      'Turmeric powder ½ tsp',
+      'Cumin seeds powder ¼ tsp',
+      'Black pepper powder to taste',
+      'Salt to taste',
+      'Oil as required',
+      'Yogurt 2/3 cup (whisked)',
+      'Lemon juice 4 tbsp',
+      'Fresh coriander 1 tbsp (chopped)',
+      'For garnishing:',
+      'Mixed salad leaves',
+      'Lemon wedges',
+      'Onion',
+      'Fresh coriander',
+    ],
+    [
+      'In a bowl mix the chicken, turmeric powder, red chilli powder, cumin seeds powder along with the salt, black pepper and ginger garlic paste together along with 1 tbsp oil.',
+
+      'Add the yogurt and lemon juice and mix well to combine.',
+      
+      'Stir in the chopped fresh coriander.',
+      
+      'Leave to marinate for 2 hours.',
+      
+      'Bake in a preheated oven for 15 mins or grill on the stove in a well greased grill pan until chicken is tender and charred from the edges.',
+      
+      'Serve hot over salad leaves along with onions, lemon wedges and sprinkle fresh coriander.',
+      
+    ],
+    true,
+    false,
+    true,
+    false
+  ),
+
+  new Meal(
+    'm7',
+    ['c7' , 'c4' , 'c5'],
+    'Cake',
+    'pricey',
+    'simple',
+    'https://images.unsplash.com/photo-1579306194872-64d3b7bac4c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MjN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+    120,
+    [
+      '3 cup all purpose flour',
+      '4 cup egg',
+      '2 teaspoon baking soda',
+      '2 teaspoon vanilla essence',
+      '1 1/2 cup powdered sugar',
+      '1 cup butter',
+      '1 cup milk',
+    ],
+    [
+      'Step 1: Cream together butter-sugar and then blend with beaten eggs',
+      'Step 2: Combine flour mix and beaten eggs',
+      'Step 3: Bake the cake as per your convenience',
+      'Step 4: Check with a knife or skewer if it is cooked and serve',
+    ],
+    true,
+    false,
+    true,
+    false
+  ),
+
+  new Meal(
+    'm8',
+    ['c8' , 'c10'],
+    'Delicious Dal',
+    'pricey',
+    'challenging',
+    'https://media.istockphoto.com/photos/red-lentils-dal-in-black-bowl-on-dark-slate-table-top-lentils-tomato-picture-id1274976714?b=1&k=6&m=1274976714&s=170667a&w=0&h=I4zYVTXBBjnM-BMVv1_Fk3kPOmV167AhGwvV4A4s110=',
+    60,
+    [
+      '1 cup toor daal',
+      '1/2 cup masoor dal',
+      '1 tablespoon crushed ginger',
+      '2 finely chopped green chilli',
+      '1 teaspoon red chilli powder',
+      '8 cup water',
+      'salt as required',
+      '2 crushed lightly dry red chili',
+      '1/2 cup chana dal',
+      '2 medium sliced onion',
+      '1 1/2 tablespoon crushed garlic',
+      '2 finely chopped tomato',
+      '1/2 teaspoon powdered turmeric',
+      '8 teaspoon ghee',
+      '1 teaspoon cumin seeds',
+      '2 pinches asafoetida',
+    ],
+    [
+      'Step 1: Pressure cook the dals',
+      'Step 2: Saute the vegetables',
+      'Step 3: Add spices & cook until the vegetables until tender',
+      'Step 4: Add cooked dal, water & let it simmer',
+      'Step 5: Prepare the tempering',
+      'Step 6: Pour the tempering over cooked dal & garnish before serving',
+
+    ],
+    true,
+    false,
+    false,
+    true
+  ),
+
+  new Meal(
+    'm9',
+    ['c9', 'c2'],
+    'Pizza',
+    'affordable',
+    'hard',
+    'https://images.unsplash.com/photo-1591722937570-370bf646acc7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGNvb2tpbmclMjBwaXp6YXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80',
+    50,
+    [
+      '2 cup all purpose flour',
+      '100 ml tomato ketchup',
+      '1 tomato',
+      '2 onion',
+      '1 teaspoon chilli flakes',
+      '1 teaspoon baking powder',
+      '1 teaspoon sugar',
+      '100 gm processed cheese',
+      '4 mushroom',
+      '1/2 capsicum (green pepper)',
+      '1 teaspoon oregano',
+      '1/2 cup mozzarella',
+      '1 tablespoon dry yeast',
+     'water as required',
+    ],
+    [
+      'Step 1: Prepare the pizza dough',
+      'Step 2: Prepare the pizza base',
+      'Step 3: Chop all the vegetables for the pizza',
+      'Step 4: Spread the sauce and veggies on the base',
+      'Step 5: Bake the pizza at 250 degree Celsius for 10 minutes',
+    ],
+    true,
+    false,
+    true,
+    false
+  ),
+  new Meal(
+    'm10',
+    ['c5', 'c10' , 'c9' , 'c6' , 'c1' , 'c3' , 'c2'],
+    'Cold Drink',
+    'Affordables',
+    'simple',
+    'https://images.unsplash.com/photo-1617814194794-3bda0eb98622?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29sZCUyMGRyaW5rJTIwY29jYSUyMGNvbGF8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    10,
+    [
+      'High fructose corn syrup',
+      'Systemic effects linked to high fructose corn syrup',
+      'Obesity linked to high fructose corn syrup',
+      'Cardiovascular disease linked to high fructose corn syrup',
+      'Gout linked to high fructose corn syrup',
+      'Diabetes linked to high fructose corn syrup',
+    ],
+    [
+      'Clarifying the water',
+      'Filtering, sterilizing, and dechlorinating the water',
+      'Mixing the ingredients',
+      'Carbonating the beverage',
+      'Filling and packaging',
+    ],
+    true,
+    true,
+    true,
+    true
+  )
+];
